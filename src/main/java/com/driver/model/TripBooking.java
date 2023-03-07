@@ -16,6 +16,10 @@ public class TripBooking {
     @Enumerated(value = EnumType.STRING)
     private TripStatus status;
 
+    @JoinColumn
+    @ManyToOne
+    Driver driver;
+
     private int bill;
 
     public TripBooking() {
@@ -93,9 +97,7 @@ public class TripBooking {
         this.customer = customer;
     }
 
-    @ManyToOne
-    @JoinColumn
-    private Driver driver;
+
 
 
     @ManyToOne

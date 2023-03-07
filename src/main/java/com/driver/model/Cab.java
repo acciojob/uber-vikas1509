@@ -28,6 +28,7 @@ public class Cab {
     }
 
 
+
     @OneToOne(mappedBy = "cab", cascade = CascadeType.ALL)
     private Driver driver;
 

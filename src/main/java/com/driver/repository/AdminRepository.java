@@ -6,5 +6,8 @@ import org.springframework.stereotype.Repository;
 import com.driver.model.Admin;
 @Repository
 public interface AdminRepository extends JpaRepository<Admin, Integer>{
+    @Override
+    void delete(Admin admin);
+
 
 }
